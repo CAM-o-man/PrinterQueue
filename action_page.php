@@ -37,9 +37,7 @@
     </head>
     <body>
     <!-- All content below here-->
-    <?php echo $_POST["firstname"]; ?> <?php echo $_POST["lastname"]; ?> from <?php echo $_POST["academy"]; ?>, you <br/>
-    have successfully submitted your file, <?php  pathinfo($target_file, PATHINFO_FILENAME)  ?>.
-
+    <?php   echo $_POST["firstname"];  ?>
     <!-- All content above here-->
     </body>
 </html>
