@@ -8,15 +8,13 @@
             $target_dir = "/uploads";
             $target_file = $target_dir . basename($_FILES["file"]["name"]);
             $uploadOK = 1;
-            $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-
-
+            $fileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
         ?>
     </head>
     <body>
     <!-- All content below here-->
     <?php echo $_POST["firstname"]; ?> <?php echo $_POST["lastname"]; ?> from <?php echo $_POST["academy"]; ?>, you <br/>
-    have successfully submitted
+    have successfully submitted your file, <?php  pathinfo($target_file, PATHINFO_FILENAME)  ?>.
 
     <!-- All content above here-->
     </body>
