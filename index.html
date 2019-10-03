@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title></title>
-  <meta name="description" content="">
+  <meta name="description" content="A signup for use of the MCST 3D Printers">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="manifest" href="site.webmanifest">
@@ -22,8 +22,28 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <!-- Add content below this tag -->
+
+
+  <form id="main_form" class="signup" method="post" action="action_page.php" enctype="multipart/form-data">
+    <fieldset>
+      <legend>Personal Information:</legend>
+      <p>First Name</p>
+      <input type="text" name="firstname"><br/>
+      <p>Last Name</p>
+      <input type="text" name="lastname"><br/>
+      <p>Academy</p>
+      <input type="text" name="academy"><br/>
+    </fieldset>
+    <fieldset>
+      <legend>Model:</legend>
+      <input type="file" name="file">
+    </fieldset>
+    <input type="submit">
+  </form>
+
+
+  <!-- Add content above this tag -->
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
